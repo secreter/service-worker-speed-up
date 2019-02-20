@@ -1,0 +1,10 @@
+.DS_STORE
+node_modules
+/logs
+.idea
+*.log
+.svn
+snapshot
+manifest.json
+/public
+/server/views/dist
