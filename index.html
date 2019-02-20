@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>PWA</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="faster/index.js" async></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+PWA
+<img src="https://img.redream.cn/egg-multipart-test/0_%E7%9C%8B%E5%9B%BE%E7%8E%8B.jpg" alt="">
+<button class="js-push-button">Subscribe to Push Notifications</button>
+</body>
+<script>
+    //I was getting a similar issue and found that it was happening because I had mode: 'no-cors' set in fetch but cors was set on the server. Worth checking if it happens to anyone else
+    //Uncaught (in promise) SyntaxError: Unexpected end of input
+    fetch('http://localhost:6777/json',{
+        mode: 'cors'
+    })
+        .then(function(response) {
+            console.log(response)
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(myJson);
+        });
+</script>
+</html>

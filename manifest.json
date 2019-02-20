@@ -1,0 +1,43 @@
+{
+  "name": "PWA",
+  "short_name": "PWA",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#38a",
+  "description": "A simply pwa app.",
+  "theme_color": "aliceblue",
+  "//":"for push msg",
+  "gcm_sender_id": "653317226796",
+  "icons": [{
+    "src": "/img/icon.jpg",
+    "sizes": "48x48",
+    "type": "image/jpg"
+
+  }, {
+    "src": "/img/icon.jpg",
+    "sizes": "72x72",
+    "type": "image/jpg"
+  }, {
+    "src": "/img/icon.jpg",
+    "sizes": "96x96",
+    "type": "image/jpg"
+  }, {
+    "src": "/img/icon.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "/img/icon.jpg",
+    "sizes": "168x168",
+    "type": "image/jpg"
+  }, {
+    "src": "/img/icon.jpg",
+    "sizes": "192x192",
+    "type": "image/jpg"
+  }],
+  "related_applications": [{
+    "platform": "web"
+  }, {
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+  }]
+}
